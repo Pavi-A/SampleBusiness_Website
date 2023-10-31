@@ -1,0 +1,36 @@
+.center-container {
+    display: flex;
+ /* Horizontal centering */
+    align-items:flex-start; /* Vertical centering */
+    height: 300px; /* Adjust the container's height as needed */
+    flex-direction:row;
+    background-image: url(images/Background\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.order-details{
+    align-items: center;
+    margin-top: 200px;
+    padding-left: 500px;
+    color: blue;
+    background-color: rgb(177, 172, 172);
+
+   
+
+}
+.cake img {
+    width: 100%;
+    height: auto;
+}
+.cake {
+    text-align: center;
+    width: 150px;
+    padding-left: 80px;
+}
+.confirm{
+    padding: 340px;
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+}

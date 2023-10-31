@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Details</title>
+    <link rel="stylesheet type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <div class="image-grid">
+    <h2>CAKE DETAILS</h2>
+    <div class="center-container">
+    <table>
+        <tr>
+        <div class="cake">
+            <h2>Vanilla Cake</h2>
+            <img style="width: 150px;" src="images/Vanilla-Cake.jpeg" alt="Vanilla Cake">
+            <p><b>Price: Rs 200</b></p>
+            <button onclick="showOrderConfirmation('Vanilla Cake', 200)">Add to Cart</button><br><br>
+        </div>
+
+        <div class="cake">
+            <h2>Strawberry Cake</h2>
+            <img style="width: 150px;"src="images/Stawbery_cake.jpg" alt="Strawberry Cake">
+            <p><b>Price: Rs 300</b></p>
+            <button onclick="showOrderConfirmation('Strawberry Cake', 300)">Add to Cart</button>
+        </div>
+
+        <div class="cake">
+            <h2>Butterscotch Cake</h2>
+            <img style="width: 150px"src="images/Butterscoth_image.jpg" alt="Butterscotch Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('Butterscotch Cake', 400)">Add to Cart</button>
+        </div>
+        <div class="cake">
+            <h2>Choclate Cake</h2>
+            <img style="width: 80px"src="images/Choclate image.jpg" alt="choco Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('choco Cake', 400)">Add to Cart</button>
+        </div>
+        <div class="cake">
+            <h2>Red velvet Cake</h2>
+            <img style="width: 150px"src="images/Red velvet image.jpg" alt="Red Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('Red Cake', 400)">Add to Cart</button>
+        </div>
+    </tr>
+    <tr>
+        <div class="cake">
+            <h2>ice-cream Cake</h2>
+            <img style="width: 100px"src="images/ice cream cake.jpg" alt="ice Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('ice Cake', 400)">Add to Cart</button>
+        </div>
+
+        <div class="cake">
+            <h2>pineapple Cake</h2>
+            <img style="width: 100px"src="images/pineapple cake.jpg" alt="pineapple Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('pineapple Cake', 400)">Add to Cart</button>
+        </div>
+
+        <div class="cake">
+            <h2>orange Cake</h2>
+            <img style="width: 100px"src="images/pineapple cake.jpg" alt="Orange Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('orange Cake', 400)">Add to Cart</button>
+        </div>
+
+        <div class="cake">
+            <h2>peanut Cake</h2>
+            <img style="width: 100px"src="images/peanut images.jpg" alt="peanut Cake">
+            <p><b>Price: Rs 400</b></p>
+            <button onclick="showOrderConfirmation('peanut Cake', 400)">Add to Cart</button>
+        </div>
+    </tr>
+    </table>
+    </div>
+    </div>
+    
+
+    <!-- Hidden Order Confirmation Section -->
+    <div class="Submitorder-confirmation" id="SubmitorderConfirmation">
+        <div class="order-details">
+            <h2>Order Confirmation</h2>
+            <h3>Item: <span id="itemName"></span></h3>
+            <h2>Price: Rs <span id="itemPrice"></span></h2>
+            <button onclick="SubmitOrderConfirmation()">Submit</button>
+        </div>
+    
+    </div>
+
+    <script>
+        function showOrderConfirmation(itemName, itemPrice) {
+            document.getElementById("itemName").textContent = itemName;
+            document.getElementById("itemPrice").textContent = itemPrice;
+            document.getElementById("SubmitorderConfirmation").style.display = "block";
+        }
+        function SubmitOrderConfirmation() {
+            
+            window.location.href = 'last.html';
+        }
+    </script>
+</body>
+
